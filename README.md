@@ -1,5 +1,11 @@
 # producer-service
 
+Dependent project link
+
+1.	https://github.com/VengadeshArjunan/EurekaServer
+2.	https://github.com/VengadeshArjunan/producer-service
+3.	https://github.com/VengadeshArjunan/consumer-service
+
 http://localhost:8761/ - Eureka Server
 	
 	Instances currently registered with Eureka
