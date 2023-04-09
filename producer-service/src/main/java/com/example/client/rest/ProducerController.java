@@ -17,13 +17,13 @@ public class ProducerController {
 	
 	@GetMapping("/message")
 	public String message() {
-		logger.debug("*****Started data from producer using endpoint /message");
+		logger.info("*****Started data from producer using endpoint /message");
 		return "Hello from Producer on port:"+ serverHost;
 	}
 	
 	@GetMapping("/message/{id}")
 	public String message(@PathVariable int id) {
-		logger.debug("*****Started data from producer using endpoint /message/id");
+		logger.info("*****Started data from producer using endpoint /message/id");
 		return "Hello from Producer on port:"+ serverHost +" with path parameter ="+ id;
 	}
 }
