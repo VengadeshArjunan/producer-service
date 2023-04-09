@@ -1,0 +1,37 @@
+dependency project
+producer-service
+consumer-service
+EurekaServer
+
+
+it helps gather timing data needed to troubleshoot latency problems in service architectures.
+
+https://zipkin.io/
+
+
+http://localhost:9411/zipkin/
+  it will show all the details of nested microservices call.
+
+
+http://localhost:8761/ - Eureka Server
+	
+	Instances currently registered with Eureka
+Application	AMIs	Availability Zones	Status
+CONSUMER-SERVICE	n/a (1)	(1)	UP (1) - Admin-PC:consumer-service:8080
+PRODUCER-SERVICE	n/a (2)	(2)	UP (2) - Admin-PC:producer-service:8082
+
+
+
+http://localhost:8082/message
+
+	Hello from Producer on port:8082
+	
+http://localhost:8084/message
+
+	Hello from Producer on port:8084
+	
+http://localhost:8080/message
+	
+	Alternatively it will come based on load
+	Hello from Producer on port:8082
+	
